@@ -1,13 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import express, { Express, Request, Response, NextFunction } from 'express';
-import cors from 'cors';
+import express, { Express } from 'express';
 
-const app = express();
+const app: Express = express();
 const port = 8000;
-const dataFile = '../data/users.json';
-
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Server is running on http://localhost:${port}`);
+});
